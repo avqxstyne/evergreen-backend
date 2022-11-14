@@ -1,0 +1,75 @@
+Tencent & the CCP
+BlackRock
+
+1. Background
+2. Issues
+3. Impact
+
+Throughout history, there have been countless schemes for world domination. From massive conquests like those of Ancient Rome and Greece, 
+to more modern ones such has the efforts of the British Empire, to the Chinese control of the world 30 years from now. But one conquest,
+if it can be called one, has made it much further than any of these in its control of the world. The scariest part is that it's not even 
+a country or government entity. On top of that, most people have never heard of it. Henry Kissinger once said that whoever
+controls the money controls the world.
+
+Let me introduce you to BlackRock
+
+Let's start with some background:
+The key man in this story is Larry Fink. Born on November 2, 1952, Fink was raised in an avergae home. But he quickly
+began to climb the ranks of the world, earning a BA in political science and MBA in real estate in his early 20s. Soon enough though, 
+he began to realize that money, not politics, is not where the power lies.
+He started his career in 1976 at First Boston, a New-York based investment bank, where was one of the first 
+mortgage-backed security traders ever. Fink was by far First Boston's most profitable employee, adding around 1 billion
+dollars to the company's bottom line in less than a decade. He was on track to possibly even become CEO until 1986, when Larry made a small mistake.
+He lost the company 100 million dollars through an incorrect prediction.
+Now while this caused First Boston to get him out of there without a second thought, it also inspired his future business ideas 
+centered around risk management. With this in mind, Fink formulated a plan. After contacting some old connections, Fink founded
+risk management and investment company Blackrock. Under the wing of a 5 million dollar credit line from The Blackstone Group, BlackRock
+turned that 5 million dollars into 8 billion dollars in only a few years.
+
+At this point, they were clearly a profitable business and decided to go public. The split apart from parent company Blackstone, 
+and the firm officialy adopted the name BlackRock. In Fink's conquest for more power, he pressured one of the co-founders into 
+selling his shares of the company for 250 million, which would now be worth over 12b. This co-founder, Stephen Schwarzman, called this his 'Heroic Mistake'.
+By the end of 1992, only 4 years from it's creation, BlackRock was managing 17b dollars in assets. 2 years after that, they were managing 53b, and
+Fink was the CEO and chairman of BlackRock Inc.
+
+With background out of the way, let's take a look the corruption and of Blackrock and their rise to a major world power in the 21st century.
+
+I'm sure all of us that weren't 3 years old at the time remember the 2008 financial crisis. So many companies were devasted,
+yet BlackRock massively profited in one of their first displays of corruption.
+
+
+
+try {
+
+            // Creating a connection to text file
+            File file = new File(args[0]);
+            FileInputStream fis=new FileInputStream(file); 
+                //opens a connection to an actual file  
+
+            int[] counts = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+            char[] letterArr = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
+            'm', 'n', 'o', 'p', 'q' ,'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' '};
+
+            // Iterates through each character in the file and records their count.
+            int r=0;  
+            while((r=fis.read())!=-1) {  
+                char x = (char)r;
+
+                for (int i = 0; i < letterArr.length; i++) {
+                    if (x == letterArr[i]) {
+                        Array.set(counts, i, counts[i] + 1);
+                    }
+                }
+            }  
+
+            // Prints the character occurences.
+            for (int i = 0; i < counts.length; i++) {
+                System.out.println(letterArr[i] + ": " + counts[i]);
+            }
+        }
+
+        // Catches an error.
+        catch(Exception e) {  
+            e.printStackTrace();  
+        }  
