@@ -14,7 +14,11 @@ public class Files {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String filetype;
+    private String date;
+    private int calories;
+    private int fat;
+    private int protein;
+    private int carbs;
 
     public Files() {
     }
@@ -35,12 +39,44 @@ public class Files {
         this.name = name;
     }
 
-    public String getFiletype() {
-        return filetype;
+    public String getDate() {
+        return date;
     }
 
-    public void setFiletype(String filetype) {
-        this.filetype = filetype;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+    public int getFat() {
+        return fat;
+    }
+
+    public void setFat(int fat) {
+        this.fat = fat;
+    }
+
+    public int getProtein() {
+        return protein;
+    }
+
+    public void setProtein(int protein) {
+        this.protein = protein;
+    }
+
+    public int getCarbs() {
+        return carbs;
+    }
+
+    public void setCarbs(int carbs) {
+        this.carbs = carbs;
     }
 
 
